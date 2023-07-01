@@ -57,6 +57,6 @@ app.post("/imageUrl", (req, res) => {
     image.handleClarifaiApi(req, res)
 })
 
-app.listen(3000, () =>{
-    console.log("App is working!")
+app.listen(process.env.PORT || 3000, () =>{
+    console.log(`App is working on port ${PORT}!`)
 })
