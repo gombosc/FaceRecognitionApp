@@ -27,7 +27,7 @@ const db = knex({
 })
 
 app.get("/", (req, res) =>{
-    res.json("Fetching users!")
+    res.send("Fetching users!")
 })
 
 app.post("/signIn" , (req, res) => {
