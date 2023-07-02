@@ -42,7 +42,7 @@ const handleClarifaiApi = (req, res) =>{
 const handleImage = (req, res, db) =>{
     const {id} = req.body; 
     // const id = req.params.id
-    db('app_users').select('*')
+    db('users').select('*')
     .where('id', '=', id)
     .increment('entries', 1)
     .returning('entries')

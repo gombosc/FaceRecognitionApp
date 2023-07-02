@@ -1,6 +1,6 @@
 const handleProfile = (req, res) =>{
     const {id} = req.params;
-    db.select("*").from("app_users").where({id})
+    db.select("*").from("users").where({id})
     .then(user=>
         {
             if(user.length){
