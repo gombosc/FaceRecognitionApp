@@ -59,5 +59,5 @@ app.post("/imageUrl", (req, res) => {
 })
 
 app.listen(process.env.port || 3000, () =>{
-    console.log(`App is working on port ${PORT}!`)
+    console.log(`App is working on port ${port}!`)
 })
